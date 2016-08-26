@@ -12,7 +12,26 @@
 		B524DA091D6D637C00F3741F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B524DA071D6D637C00F3741F /* Main.storyboard */; };
 		B524DA0B1D6D637C00F3741F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B524DA0A1D6D637C00F3741F /* Assets.xcassets */; };
 		B524DA0E1D6D637C00F3741F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B524DA0C1D6D637C00F3741F /* LaunchScreen.storyboard */; };
+		B524DA161D6D66EE00F3741F /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B524DA151D6D66EE00F3741F /* pop.framework */; };
+		B524DA181D6D670D00F3741F /* Koloda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B524DA171D6D670D00F3741F /* Koloda.framework */; };
+		B524DA1A1D6D69AA00F3741F /* Abraham_Lincoln.png in Resources */ = {isa = PBXBuildFile; fileRef = B524DA191D6D69AA00F3741F /* Abraham_Lincoln.png */; };
+		B524DA1C1D6D6A6500F3741F /* Koloda.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B524DA171D6D670D00F3741F /* Koloda.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B524DA1D1D6D6A6500F3741F /* pop.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B524DA151D6D66EE00F3741F /* pop.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B524DA1B1D6D6A5800F3741F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B524DA1C1D6D6A6500F3741F /* Koloda.framework in CopyFiles */,
+				B524DA1D1D6D6A6500F3741F /* pop.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B524DA001D6D637C00F3741F /* Politician Tinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Politician Tinder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +41,9 @@
 		B524DA0A1D6D637C00F3741F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B524DA0D1D6D637C00F3741F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B524DA0F1D6D637C00F3741F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B524DA151D6D66EE00F3741F /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = pop.framework; sourceTree = "<group>"; };
+		B524DA171D6D670D00F3741F /* Koloda.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Koloda.framework; sourceTree = "<group>"; };
+		B524DA191D6D69AA00F3741F /* Abraham_Lincoln.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Abraham_Lincoln.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B524DA181D6D670D00F3741F /* Koloda.framework in Frameworks */,
+				B524DA161D6D66EE00F3741F /* pop.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +62,8 @@
 		B524D9F71D6D637C00F3741F = {
 			isa = PBXGroup;
 			children = (
+				B524DA171D6D670D00F3741F /* Koloda.framework */,
+				B524DA151D6D66EE00F3741F /* pop.framework */,
 				B524DA021D6D637C00F3741F /* Politician Tinder */,
 				B524DA011D6D637C00F3741F /* Products */,
 			);
@@ -54,6 +80,7 @@
 		B524DA021D6D637C00F3741F /* Politician Tinder */ = {
 			isa = PBXGroup;
 			children = (
+				B524DA191D6D69AA00F3741F /* Abraham_Lincoln.png */,
 				B524DA031D6D637C00F3741F /* AppDelegate.swift */,
 				B524DA051D6D637C00F3741F /* ViewController.swift */,
 				B524DA071D6D637C00F3741F /* Main.storyboard */,
@@ -74,6 +101,7 @@
 				B524D9FC1D6D637C00F3741F /* Sources */,
 				B524D9FD1D6D637C00F3741F /* Frameworks */,
 				B524D9FE1D6D637C00F3741F /* Resources */,
+				B524DA1B1D6D6A5800F3741F /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -125,6 +153,7 @@
 				B524DA0E1D6D637C00F3741F /* LaunchScreen.storyboard in Resources */,
 				B524DA0B1D6D637C00F3741F /* Assets.xcassets in Resources */,
 				B524DA091D6D637C00F3741F /* Main.storyboard in Resources */,
+				B524DA1A1D6D69AA00F3741F /* Abraham_Lincoln.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +278,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Politician Tinder/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.360idev.Politician-Tinder";
@@ -260,6 +293,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Politician Tinder/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.360idev.Politician-Tinder";

@@ -1,25 +1,110 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hWL-FQ-5Rq">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bfS-AL-3xC">
+                                <rect key="frame" x="0.0" y="226" width="375" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKn-5s-zcL">
+                                <rect key="frame" x="169" y="460" width="37" height="30"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <segue destination="wlo-Ug-fPJ" kind="show" id="tRw-BL-xD3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick your State" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bT8-yb-ik3">
+                                <rect key="frame" x="130" y="197" width="115" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bfS-AL-3xC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="L6G-FE-yDZ"/>
+                            <constraint firstItem="bfS-AL-3xC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="O42-rZ-cQa"/>
+                            <constraint firstItem="bT8-yb-ik3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bEO-fk-2PE"/>
+                            <constraint firstItem="uKn-5s-zcL" firstAttribute="top" secondItem="bfS-AL-3xC" secondAttribute="bottom" constant="18" id="kz3-T7-dsV"/>
+                            <constraint firstItem="bfS-AL-3xC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nZB-0e-Nqq"/>
+                            <constraint firstItem="uKn-5s-zcL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pKK-ku-auD"/>
+                            <constraint firstAttribute="trailing" secondItem="bfS-AL-3xC" secondAttribute="trailing" id="uHH-fS-smQ"/>
+                            <constraint firstItem="bfS-AL-3xC" firstAttribute="top" secondItem="bT8-yb-ik3" secondAttribute="bottom" constant="8" id="xJy-R8-gsW"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Jpz-am-6Um"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1030.5" y="339.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aUc-08-Zi1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hWL-FQ-5Rq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="W0g-KC-5rH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vvh-Wh-5y3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z3u-Yt-dzm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="225" y="1033"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="N12-cS-qkO">
+            <objects>
+                <viewController id="wlo-Ug-fPJ" customClass="ViewController" customModule="Politician_Tinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K9c-DR-8ph"/>
+                        <viewControllerLayoutGuide type="bottom" id="AGC-cB-XNl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ywP-Ao-vig">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o3H-us-tX3" customClass="KolodaView" customModule="Koloda">
+                                <rect key="frame" x="0.0" y="105" width="375" height="515"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="o3H-us-tX3" secondAttribute="trailing" constant="-20" id="D1c-94-hzm"/>
+                            <constraint firstItem="AGC-cB-XNl" firstAttribute="top" secondItem="o3H-us-tX3" secondAttribute="bottom" constant="47" id="bPU-b0-cYR"/>
+                            <constraint firstItem="o3H-us-tX3" firstAttribute="leading" secondItem="ywP-Ao-vig" secondAttribute="leadingMargin" constant="-20" id="m36-WC-fyJ"/>
+                            <constraint firstItem="o3H-us-tX3" firstAttribute="top" secondItem="K9c-DR-8ph" secondAttribute="bottom" constant="41" id="vXc-50-VBW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="JdR-WI-SZC"/>
+                    <connections>
+                        <outlet property="kolodaView" destination="o3H-us-tX3" id="vY6-ip-Q1a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FkS-As-AtD" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1687.5" y="298.5"/>
         </scene>
     </scenes>
 </document>
